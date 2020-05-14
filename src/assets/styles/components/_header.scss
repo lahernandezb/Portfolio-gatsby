@@ -1,0 +1,59 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.25rem;
+
+  &__title {
+    @include visually-hidden;
+  }
+
+  &__logo {
+    max-width: 2rem;
+  }
+  &__nav {
+    text-align: center;
+  }
+  &__menu-item {
+    text-align: center;
+    margin: 0.5rem 0;
+  }
+
+  &__menu-link {
+    color: $secondary-color;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__menu-button {
+    background-color: $accent-one;
+    font-family: $rationale;
+    font-size: 1rem;
+    color: $primary-color;
+    letter-spacing: 0.2rem;
+    width: 20vw;
+    border: none;
+    border-radius: 0.5rem;
+    line-height: 1.5rem;
+    text-transform: uppercase;
+    margin-top: 0.75rem;
+
+    &:hover {
+      text-decoration: underline;
+      cursor: pointer;
+      background-color: $primary-color;
+      color: $accent-one;
+      border: 1px $accent-one solid;
+    }
+  }
+}
+// not sure why but the gatsby wrapper requires some width inside a flexbox container.
+.gatsby-image-wrapper {
+  width: 2rem;
+}
+.hidden {
+  display: none;
+}
