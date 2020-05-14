@@ -1,34 +1,25 @@
 .header {
-  display: flex;
-  justify-content: space-between;
-  padding: 1.25rem;
+  box-shadow: 4px 4px 4px 0 rgba(255, 255, 255, 0.2);
+  position: fixed;
+  width: 100%;
+  z-index: 3;
 
   &__title {
     @include visually-hidden;
   }
 
   &__logo {
+    float: left;
     max-width: 2rem;
-  }
-  &__nav {
-    text-align: center;
-  }
-  &__menu-item {
-    text-align: center;
-    margin: 0.5rem 0;
-  }
+    margin: 0.75rem;
 
-  &__menu-link {
-    color: $secondary-color;
-    text-decoration: none;
-    text-transform: uppercase;
-
-    &:hover {
-      text-decoration: underline;
+    @media (min-width: 43rem) {
+      margin: 0.75rem 0 0.75rem 2rem;
     }
   }
 
   &__menu-button {
+    float: right;
     background-color: $accent-one;
     font-family: $rationale;
     font-size: 1rem;
@@ -39,7 +30,7 @@
     border-radius: 0.5rem;
     line-height: 1.5rem;
     text-transform: uppercase;
-    margin-top: 0.75rem;
+    margin: 1.25rem 0.75rem 0.75rem 0.75rem;
 
     &:hover {
       text-decoration: underline;
@@ -48,12 +39,72 @@
       color: $accent-one;
       border: 1px $accent-one solid;
     }
+
+    @media (min-width: 43rem) {
+      display: none;
+    }
+  }
+
+  &__nav {
+    clear: both;
+    text-align: center;
+    max-height: 0;
+    transition: max-height 0.8s ease;
+    overflow: hidden;
+    background-color: $secondary-color;
+
+    @media (min-width: 43rem) {
+      max-height: none;
+      float: right;
+      clear: none;
+      background-color: transparent;
+    }
+  }
+
+  &__nav[aria-expanded='true'] {
+    max-height: 20rem;
+  }
+
+  &__menu-item {
+    text-align: center;
+    box-sizing: border-box;
+    border-bottom: 1px solid $accent-three;
+
+    @media (min-width: 43rem) {
+      float: left;
+      border-bottom: none;
+      border-right: 1px solid $accent-three;
+      padding: 1rem 1rem 1rem 1rem;
+    }
+  }
+
+  &__menu-link {
+    color: $primary-color;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0.75rem;
+
+    &:hover {
+      text-decoration: underline;
+      background-color: $secondary-color;
+      color: $primary-color;
+      transform: scale(1.1);
+
+      @media (min-width: 43rem) {
+        background-color: transparent;
+        color: $accent-one;
+      }
+    }
+
+    @media (min-width: 43rem) {
+      color: $accent-one;
+    }
   }
 }
 // not sure why but the gatsby wrapper requires some width inside a flexbox container.
 .gatsby-image-wrapper {
   width: 2rem;
-}
-.hidden {
-  display: none;
 }

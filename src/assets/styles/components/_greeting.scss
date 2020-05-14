@@ -1,12 +1,13 @@
 .greeting {
   font-family: $montserrat;
+  color: $accent-three;
   font-size: 2rem;
   position: absolute;
   top: 30vh;
 
-  &__name {
-    color: $accent-one;
-  }
+  // &__name {
+  //   color: $accent-one;
+  // }
 }
 
 .description {

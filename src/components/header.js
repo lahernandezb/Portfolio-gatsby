@@ -7,8 +7,12 @@ import logo from '../assets/images/luissymbolred.png';
 
 const Header = ({ siteTitle }) => {
   const [menuVisible, setMenuVisible] = useState(false);
+
   const toggleMenu = () => {
-    document.querySelector('.header__nav-list').classList.toggle('hidden');
+    const menu = document.querySelector('.header__nav');
+
+    const isExpanded = menu.getAttribute('aria-expanded') === 'true';
+    menu.setAttribute('aria-expanded', !isExpanded);
   };
 
   const data = useStaticQuery(graphql`
@@ -26,13 +30,17 @@ const Header = ({ siteTitle }) => {
   return (
     <header className="header">
       <h1 className="header__title">{siteTitle}</h1>
-      <div className="header__logo" aria-label="image">
+      <div className="header__logo" aria-hidden="true">
         <Img fluid={data.file.childImageSharp.fluid} />
       </div>
-      <nav className="header__nav">
-        <button className="header__menu-button" onClick={toggleMenu}>
-          Menu
-        </button>
+      <button
+        className="header__menu-button"
+        onClick={toggleMenu}
+        aria-haspopup="true"
+      >
+        Menu
+      </button>
+      <nav className="header__nav" aria-expanded="false">
         <MenuList />
       </nav>
     </header>
