@@ -11,6 +11,7 @@
   &__logo {
     float: left;
     max-width: 2rem;
+    width: 100%;
     margin: 0.75rem;
 
     @media (min-width: 43rem) {
@@ -103,8 +104,4 @@
       color: $accent-one;
     }
   }
-}
-// not sure why but the gatsby wrapper requires some width inside a flexbox container.
-.gatsby-image-wrapper {
-  width: 2rem;
 }
