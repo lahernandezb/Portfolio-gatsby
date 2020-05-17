@@ -1,0 +1,44 @@
+.project-card {
+  margin: 1.25rem 0;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0.75rem;
+  color: $primary-color;
+  background-color: $accent-one;
+  border-radius: 0.25rem;
+  line-height: 1.5rem;
+
+  @media (min-width: 43rem) {
+    padding: 1.75rem;
+  }
+
+  &__link {
+    color: $primary-color;
+
+    &:hover,
+    &:focus {
+      opacity: 0.7;
+    }
+  }
+
+  &__name {
+    @media (min-width: 43rem) {
+      font-size: 2rem;
+      text-align: center;
+    }
+  }
+  &__icon-list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  &__icon {
+    margin: 0.25rem;
+    width: 3.25rem;
+
+    @media (min-width: 43rem) {
+      width: 5rem;
+    }
+  }
+}

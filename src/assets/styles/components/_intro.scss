@@ -2,9 +2,9 @@
   width: 80%;
 
   &__greeting {
-    margin: 4rem 0;
+    margin: 3rem 0;
     color: $accent-two;
-    font-size: 1.25rem;
+    font-size: 1.75rem;
     font-weight: $light;
 
     @media (min-width: 43rem) {
@@ -15,13 +15,14 @@
 
   &__name {
     color: $accent-one;
+    display: block;
   }
 
   &__description {
     font-size: 2rem;
     font-weight: $light;
     color: $accent-two;
-    margin: 4rem 0;
+    margin: 3rem 0;
 
     @media (min-width: 43rem) {
       font-size: 4rem;
