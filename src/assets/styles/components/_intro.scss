@@ -1,10 +1,15 @@
 .intro {
+  width: 80%;
+
   &__greeting {
-    margin-top: 6rem;
+    margin: 6rem 0;
     color: $accent-two;
     font-size: 1.25rem;
     font-weight: $light;
-    margin-bottom: 4rem;
+
+    @media (min-width: 43rem) {
+      font-size: 4rem;
+    }
   }
 
   &__name {
@@ -15,7 +20,11 @@
     font-size: 2rem;
     font-weight: $light;
     color: $accent-two;
-    margin-bottom: 4rem;
+    margin: 6rem 0;
+
+    @media (min-width: 43rem) {
+      font-size: 4rem;
+    }
   }
 
   &__title {
@@ -39,6 +48,10 @@
     color: $primary-color;
     text-transform: uppercase;
     margin-bottom: 5rem;
+
+    @media (min-width: 43rem) {
+      font-size: 2rem;
+    }
 
     &:hover {
       color: $secondary-color;

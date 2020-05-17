@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Intro = () => (
-  <div className="intro">
+  <section className="intro">
     <p className="intro__greeting">
       Hi, I'm <span className="intro__name">Luis Hernandez</span>
     </p>
@@ -10,7 +10,7 @@ const Intro = () => (
       based in <span className="intro__location">Dayton, OH </span>
     </p>
     <button className="intro__cta">get in touch</button>
-  </div>
+  </section>
 );
 
 export default Intro;
