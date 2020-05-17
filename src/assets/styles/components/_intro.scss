@@ -2,13 +2,14 @@
   width: 80%;
 
   &__greeting {
-    margin: 6rem 0;
+    margin: 4rem 0;
     color: $accent-two;
     font-size: 1.25rem;
     font-weight: $light;
 
     @media (min-width: 43rem) {
       font-size: 4rem;
+      margin: 6rem 0;
     }
   }
 
@@ -20,10 +21,11 @@
     font-size: 2rem;
     font-weight: $light;
     color: $accent-two;
-    margin: 6rem 0;
+    margin: 4rem 0;
 
     @media (min-width: 43rem) {
       font-size: 4rem;
+      margin: 6rem 0;
     }
   }
 
