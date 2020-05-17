@@ -3,6 +3,7 @@
   position: fixed;
   width: 100%;
   z-index: 3;
+  background-color: $primary-color;
 
   &__title {
     @include visually-hidden;
@@ -52,7 +53,7 @@
     max-height: 0;
     transition: max-height 0.8s ease;
     overflow: hidden;
-    background-color: $secondary-color;
+    background-color: #f3f3f3;
 
     @media (min-width: 43rem) {
       max-height: none;
@@ -63,17 +64,23 @@
   }
 
   &__nav[aria-expanded='true'] {
-    max-height: 20rem;
+    max-height: 100vh;
+  }
+
+  &__nav-list {
+    margin-top: 12rem;
+
+    @media (min-width: 43rem) {
+      margin-top: 0;
+    }
   }
 
   &__menu-item {
     text-align: center;
     box-sizing: border-box;
-    border-bottom: 1px solid $accent-three;
 
     @media (min-width: 43rem) {
       float: left;
-      border-bottom: none;
       border-right: 1px solid $accent-three;
       padding: 1rem 1rem 1rem 1rem;
     }
@@ -81,6 +88,9 @@
 
   &__menu-link {
     color: $primary-color;
+    font-family: $rationale;
+    font-size: 1.5rem;
+    letter-spacing: 0.2rem;
     text-decoration: none;
     text-transform: uppercase;
     display: block;
@@ -88,7 +98,13 @@
     box-sizing: border-box;
     padding: 0.75rem;
 
-    &:hover {
+    @media (min-width: 43rem) {
+      color: $accent-one;
+      font-size: 1rem;
+    }
+
+    &:hover,
+    &:focus {
       text-decoration: underline;
       background-color: $secondary-color;
       color: $primary-color;
@@ -98,10 +114,6 @@
         background-color: transparent;
         color: $accent-one;
       }
-    }
-
-    @media (min-width: 43rem) {
-      color: $accent-one;
     }
   }
 }

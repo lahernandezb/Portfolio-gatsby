@@ -1,13 +1,10 @@
-import { Link, useStaticQuery, graphql } from 'gatsby';
+import { useStaticQuery, graphql } from 'gatsby';
 import PropTypes from 'prop-types';
-import React, { useState, useEffect, useRef } from 'react';
+import React from 'react';
 import Img from 'gatsby-image';
 import MenuList from './menuList';
-import logo from '../assets/images/luissymbolred.png';
 
 const Header = ({ siteTitle }) => {
-  const [menuVisible, setMenuVisible] = useState(false);
-
   const toggleMenu = () => {
     const menu = document.querySelector('.header__nav');
 
@@ -41,7 +38,7 @@ const Header = ({ siteTitle }) => {
         Menu
       </button>
       <nav className="header__nav" aria-expanded="false">
-        <MenuList />
+        <MenuList toggleMenu={toggleMenu} />
       </nav>
     </header>
   );
