@@ -26,14 +26,14 @@ const Layout = ({ children }) => {
   return (
     <>
       <Header siteTitle={data.site.siteMetadata.title} />
-      <div>
-        {children}
-        <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
-        </footer>
-      </div>
+      {children}
+      <footer className="footer">
+        © {new Date().getFullYear()}, Designed by{' '}
+        <a className="footer__credit" href="https://www.behance.net/alanaee">
+          Alyssa Schenkel
+        </a>
+        {` `}
+      </footer>
     </>
   );
 };
