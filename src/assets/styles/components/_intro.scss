@@ -1,0 +1,49 @@
+.intro {
+  &__greeting {
+    margin-top: 6rem;
+    color: $accent-two;
+    font-size: 1.25rem;
+    font-weight: $light;
+    margin-bottom: 4rem;
+  }
+
+  &__name {
+    color: $accent-one;
+  }
+
+  &__description {
+    font-size: 2rem;
+    font-weight: $light;
+    color: $accent-two;
+    margin-bottom: 4rem;
+  }
+
+  &__title {
+    color: $accent-one;
+  }
+
+  &__location {
+    color: $secondary-color;
+  }
+
+  &__cta {
+    cursor: pointer;
+    border-radius: 0.5rem;
+    border: none;
+    padding: 0.5rem;
+    font-size: 1.25rem;
+    font-family: $rationale;
+    // line-height: 1.75rem;
+    text-decoration: underline;
+    background-color: $secondary-color;
+    color: $primary-color;
+    text-transform: uppercase;
+    margin-bottom: 5rem;
+
+    &:hover {
+      color: $secondary-color;
+      background-color: $primary-color;
+      border: 1px solid $secondary-color;
+    }
+  }
+}
