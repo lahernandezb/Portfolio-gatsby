@@ -28,10 +28,7 @@ const Layout = ({ children }) => {
       <Header siteTitle={data.site.siteMetadata.title} />
       <main>{children}</main>
       <footer>
-        © {new Date().getFullYear()}, Designed by{" "}
-        <a className="footer__credit" href="https://www.behance.net/alanaee">
-          Alyssa Schenkel
-        </a>
+        © {new Date().getFullYear()}
         {` `}
       </footer>
     </>

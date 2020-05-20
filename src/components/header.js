@@ -41,16 +41,6 @@ const Header = ({ siteTitle }) => {
       <div className="header__logo" aria-hidden="true">
         <Img fluid={data.file.childImageSharp.fluid} />
       </div>
-      <button
-        className="header__menu-button"
-        onClick={toggleMenu}
-        aria-haspopup="true"
-      >
-        Menu
-      </button>
-      <nav className="header__nav" aria-expanded="false">
-        <MenuList scrollTo={scrollTo} />
-      </nav>
     </header>
   )
 }

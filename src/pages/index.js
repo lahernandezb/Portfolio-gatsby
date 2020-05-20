@@ -2,17 +2,20 @@ import React from "react"
 import Layout from "../components/layout"
 
 import SEO from "../components/seo"
-import Intro from "../components/intro"
-import About from "../components/about"
-import ProjectsContainer from "../components/projects-container"
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <div className="main-content-wrapper">
-      <Intro />
-      <ProjectsContainer />
-      <About />
+    <div
+      style={{
+        postion: "absolute",
+        top: "10rem",
+        fontSize: "2rem",
+        textAlign: "center",
+      }}
+      className="main-content-wrapper"
+    >
+      Site is temporarily down for maintenance thank you!
     </div>
   </Layout>
 )
