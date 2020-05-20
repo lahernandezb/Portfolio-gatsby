@@ -1,0 +1,24 @@
+.about {
+  &__header {
+    font-size: 2.5rem;
+    font-family: $rationale;
+    text-align: right;
+  }
+
+  &__intro,
+  &__qualifications {
+    font-weight: $light;
+  }
+
+  &__skills {
+    font-family: $rationale;
+    font-size: 1.75rem;
+  }
+
+  &__skills-list {
+  }
+
+  &__skills-item {
+    list-style-type: square;
+  }
+}

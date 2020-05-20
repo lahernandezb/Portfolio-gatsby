@@ -1,0 +1,111 @@
+.header {
+  box-shadow: 4px 4px 4px 0 rgba(255, 255, 255, 0.2);
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+  background-color: $primary-color;
+
+  &__title {
+    @include visually-hidden;
+  }
+
+  &__logo {
+    float: left;
+    max-width: 2rem;
+    width: 100%;
+    margin: 0.75rem;
+
+    @media (min-width: 43rem) {
+      margin: 0.75rem 0 0.75rem 2rem;
+    }
+  }
+
+  &__menu-button {
+    float: right;
+    background-color: $accent-one;
+    font-family: $rationale;
+    font-size: 1rem;
+    color: $primary-color;
+    letter-spacing: 0.2rem;
+    width: 20vw;
+    border: none;
+    border-radius: 0.5rem;
+    line-height: 1.5rem;
+    text-transform: uppercase;
+    margin: 1.25rem 0.75rem 0.75rem 0.75rem;
+
+    &:hover {
+      text-decoration: underline;
+      cursor: pointer;
+      background-color: $primary-color;
+      color: $accent-one;
+      border: 1px $accent-one solid;
+    }
+
+    @media (min-width: 43rem) {
+      display: none;
+    }
+  }
+
+  &__nav {
+    clear: both;
+    text-align: center;
+    max-height: 0;
+    transition: max-height 0.6s ease;
+    overflow: hidden;
+    background-color: #f3f3f3;
+
+    @media (min-width: 43rem) {
+      max-height: none;
+      float: right;
+      clear: none;
+      background-color: transparent;
+    }
+  }
+
+  &__nav[aria-expanded='true'] {
+    max-height: 50rem;
+  }
+
+  &__menu-item {
+    text-align: center;
+    box-sizing: border-box;
+
+    @media (min-width: 43rem) {
+      float: left;
+      border-right: 1px solid $accent-three;
+      padding: 1rem 1rem 1rem 1rem;
+    }
+  }
+
+  &__menu-link {
+    color: $primary-color;
+    font-family: $rationale;
+    font-size: 1.5rem;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0.75rem;
+
+    @media (min-width: 43rem) {
+      color: $accent-one;
+      font-size: 1rem;
+      background-color: $primary-color;
+    }
+
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+      background-color: $secondary-color;
+      color: $primary-color;
+      transform: scale(1.1);
+      cursor: pointer;
+
+      @media (min-width: 43rem) {
+        background-color: transparent;
+        color: $accent-one;
+      }
+    }
+  }
+}

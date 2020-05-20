@@ -1,0 +1,65 @@
+.home {
+  width: 80%;
+
+  &__greeting {
+    margin: 3rem 0;
+    color: $accent-two;
+    font-size: 1.75rem;
+    font-weight: $light;
+
+    @media (min-width: 43rem) {
+      font-size: 4rem;
+      margin: 6rem 0;
+    }
+  }
+
+  &__name {
+    color: $accent-one;
+    display: block;
+  }
+
+  &__description {
+    font-size: 2rem;
+    font-weight: $light;
+    color: $accent-two;
+    margin: 3rem 0;
+
+    @media (min-width: 43rem) {
+      font-size: 4rem;
+      margin: 6rem 0;
+    }
+  }
+
+  &__title {
+    color: $accent-one;
+  }
+
+  &__location {
+    color: $secondary-color;
+  }
+
+  &__cta {
+    cursor: pointer;
+    border-radius: 0.5rem;
+    border: none;
+    padding: 0.5rem;
+    font-size: 1.25rem;
+    font-family: $rationale;
+    // line-height: 1.75rem;
+    text-decoration: underline;
+    background-color: $secondary-color;
+    color: $primary-color;
+    text-transform: uppercase;
+    margin-bottom: 5rem;
+
+    @media (min-width: 43rem) {
+      font-size: 2rem;
+    }
+
+    &:hover {
+      color: $secondary-color;
+      background-color: $primary-color;
+      border: 1px solid $secondary-color;
+    }
+  }
+}

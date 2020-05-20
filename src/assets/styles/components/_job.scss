@@ -1,0 +1,22 @@
+.job {
+  margin: 3rem 0;
+
+  &__header {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  &__bullet {
+    list-style-type: square;
+    font-weight: $light;
+  }
+
+  &__company {
+    color: $accent-one;
+    display: block;
+  }
+
+  &__description {
+    margin-top: 1.4rem;
+  }
+}
