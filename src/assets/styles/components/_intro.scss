@@ -2,13 +2,13 @@
   width: 80%;
 
   &__greeting {
-    margin: 3rem 0;
+    margin: 5vh 0;
     color: $accent-two;
-    font-size: 1.75rem;
+    font-size: 1.25rem;
     font-weight: $light;
 
     @media (min-width: 43rem) {
-      font-size: 4rem;
+      font-size: 2rem;
       margin: 6rem 0;
     }
   }
@@ -22,11 +22,11 @@
     font-size: 2rem;
     font-weight: $light;
     color: $accent-two;
-    margin: 3rem 0;
+    margin: 5vh 0;
 
     @media (min-width: 43rem) {
       font-size: 4rem;
-      margin: 6rem 0;
+      margin: 10vh 0;
     }
   }
 
@@ -42,15 +42,13 @@
     cursor: pointer;
     border-radius: 0.5rem;
     border: none;
-    padding: 0.5rem;
+    padding: 0.5rem 1.25rem;
     font-size: 1.25rem;
     font-family: $rationale;
-    // line-height: 1.75rem;
     text-decoration: underline;
     background-color: $secondary-color;
     color: $primary-color;
     text-transform: uppercase;
-    margin-bottom: 5rem;
 
     @media (min-width: 43rem) {
       font-size: 2rem;
