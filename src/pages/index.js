@@ -5,6 +5,7 @@ import SEO from "../components/seo"
 import Intro from "../components/intro"
 import About from "../components/about"
 import ProjectsContainer from "../components/projects-container"
+import Jobs from "../components/jobs"
 
 const IndexPage = () => (
   <Layout>
@@ -13,6 +14,7 @@ const IndexPage = () => (
       <Intro />
       <ProjectsContainer />
       <About />
+      <Jobs />
     </div>
   </Layout>
 )
