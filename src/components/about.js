@@ -23,13 +23,13 @@ const About = () => (
       <li className="about__skills-item">Node.js</li>
       <li className="about__skills-item">Python</li>
       <li className="about__skills-item">
-        Testing w/ Jest, Mocha, Sinon, Stryker
+        Testing: Jest, Mocha, Sinon, Stryker
       </li>
       <li className="about__skills-item">React</li>
       <li className="about__skills-item">Vue</li>
       <li className="about__skills-item">HTML</li>
       <li className="about__skills-item">(S) CSS</li>
-      <li className="about__skills-item">Mongoose</li>
+      <li className="about__skills-item">SQL and NoSQL datbases</li>
     </ul>
   </section>
 )
