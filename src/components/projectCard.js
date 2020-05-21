@@ -24,9 +24,15 @@ const ProjectCard = ({ name, tools, description }) => {
 
   return (
     <div className="project-card">
-      <Link className="project-card__link" to="">
+      <a className="project-card__link" to="">
         <h3 className="project-card__name">{name}</h3>
-      </Link>
+      </a>
+      <p className="project-card__description">
+        <strong>Description:</strong> {description}
+      </p>
+      <p className="project-card__tools">
+        <strong>Tools:</strong> {tools.map(tool => ` ${tool} |`)}
+      </p>
       <ul className="project-card__icon-list">
         {tools.map(tool => (
           <li className="project-card__icon">
@@ -34,13 +40,6 @@ const ProjectCard = ({ name, tools, description }) => {
           </li>
         ))}
       </ul>
-
-      <p className="project-card__tools">
-        <strong>Tools:</strong> {tools.map(tool => ` ${tool} `)}
-      </p>
-      <p className="project-card__description">
-        <strong>Description:</strong> {description}
-      </p>
     </div>
   )
 }
