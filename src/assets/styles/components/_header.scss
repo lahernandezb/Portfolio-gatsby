@@ -1,5 +1,5 @@
 .header {
-  box-shadow: 4px 4px 4px 0 rgba(255, 255, 255, 0.2);
+  box-shadow: 1px 1px 6px 4px rgba(255, 255, 255, 0.2);
   position: fixed;
   width: 100%;
   z-index: 3;
@@ -63,7 +63,7 @@
     }
   }
 
-  &__nav[aria-expanded='true'] {
+  &__nav[aria-expanded="true"] {
     max-height: 50rem;
   }
 
@@ -87,10 +87,11 @@
     width: 100%;
     box-sizing: border-box;
     padding: 0.75rem;
+    border: none;
 
     @media (min-width: 43rem) {
       color: $accent-one;
-      font-size: 1rem;
+      font-size: 1.25rem;
       background-color: $primary-color;
     }
 
