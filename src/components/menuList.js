@@ -22,6 +22,11 @@ const MenuList = ({ scrollTo }) => {
       </li>
       <li className="header__menu-item">
         <button className="header__menu-link" onClick={scrollTo} to="">
+          Experience
+        </button>
+      </li>
+      <li className="header__menu-item">
+        <button className="header__menu-link" onClick={scrollTo} to="">
           Contact
         </button>
       </li>

@@ -1,16 +1,17 @@
 import React from "react"
 
-const Job = ({ name, position }) => {
+const Job = ({ experience: { company, position, description } }) => {
   return (
     <div className="job">
       <h3 className="job__header">
-        {position} <span className="job__company">@ {name}</span>
+        {position} <span className="job__company">@ {company}</span>
       </h3>
       <ul className="job__description">
-        <li className="job__bullet">
-          Communicate with a multi-disciplinary teams of developers, designers,
-          and project managers on a daily basis
-        </li>
+        {description.map((item, i) => (
+          <li key={i} className="job__bullet">
+            {item}
+          </li>
+        ))}
       </ul>
     </div>
   )
