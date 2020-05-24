@@ -10,12 +10,10 @@ import Jobs from "../components/jobs"
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <div className="main-content-wrapper">
-      <Intro />
-      <ProjectsContainer />
-      <About />
-      <Jobs />
-    </div>
+    <Intro />
+    <ProjectsContainer />
+    <About />
+    <Jobs />
   </Layout>
 )
 
