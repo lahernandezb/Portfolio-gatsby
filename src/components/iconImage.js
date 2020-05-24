@@ -26,7 +26,11 @@ const Icon = props => (
         return n.node.relativePath.includes(props.filename)
       })
       return !image ? null : (
-        <Img alt={props.alt} fluid={image.node.childImageSharp.fluid} />
+        <Img
+          className="project__card-img"
+          alt={props.alt}
+          fluid={image.node.childImageSharp.fluid}
+        />
       )
     }}
   />
