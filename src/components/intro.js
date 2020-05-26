@@ -9,7 +9,9 @@ const Intro = () => (
       I'm a <span className="home__title">full stack software developer </span>
       based in <span className="home__location">Dayton, OH </span>
     </p>
-    <button className="home__cta">get in touch</button>
+    <button onClick={console.log("contact")} className="home__cta">
+      get in touch
+    </button>
   </section>
 )
 
