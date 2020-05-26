@@ -1,0 +1,29 @@
+label + input {
+  border-radius: 0.5rem;
+  border: none;
+  background-color: #f3f3f3;
+
+  &:focus {
+    border: 2px solid $accent-one;
+  }
+}
+
+textarea {
+  box-sizing: border-box;
+  border-radius: 0.5rem;
+  border: none;
+  padding: 0.5rem;
+  font-size: 1rem;
+
+  &:focus {
+    border: 2px solid $accent-one;
+  }
+}
+
+input[type="text"],
+input[type="email"] {
+  box-sizing: border-box;
+  padding: 0.5rem;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+}

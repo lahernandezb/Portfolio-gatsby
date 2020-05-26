@@ -6,6 +6,7 @@ import Intro from "../components/intro"
 import About from "../components/about"
 import ProjectsContainer from "../components/projects-container"
 import Jobs from "../components/jobs"
+import Contact from "../components/contact"
 
 const IndexPage = () => (
   <Layout>
@@ -14,6 +15,7 @@ const IndexPage = () => (
     <ProjectsContainer />
     <About />
     <Jobs />
+    <Contact />
   </Layout>
 )
 
