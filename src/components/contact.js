@@ -18,7 +18,7 @@ const Contact = () => {
       </p>
       <form className="contact__form" onSubmit={handleSubmit(onSubmit)}>
         <div className="contact__fName">
-          <label for="firstName">First Name:</label>
+          <label htmlFor="firstName">First Name:</label>
           <input
             required
             id="firstName"
@@ -29,7 +29,7 @@ const Contact = () => {
           />
         </div>
         <div className="contact__lName">
-          <label for="lastName">Last Name::</label>
+          <label htmlFor="lastName">Last Name::</label>
           <input
             required
             id="lasstName"
@@ -40,7 +40,7 @@ const Contact = () => {
           />
         </div>
         <div className="contact__email">
-          <label for="email">Email</label>
+          <label htmlFor="email">Email</label>
           <input
             required
             id="email"
@@ -51,7 +51,7 @@ const Contact = () => {
           />
         </div>
         <div className="contact__message">
-          <label for="message">Message:</label>
+          <label htmlFor="message">Message:</label>
           <textarea
             required
             id="message"
