@@ -72,7 +72,6 @@ const Contact = () => {
             rows="10"
           ></textarea>
         </div>
-        <div data-netlify-recaptcha="true"></div>
         <input className="contact__submit" type="submit" value="Send Message" />
       </form>
     </section>
