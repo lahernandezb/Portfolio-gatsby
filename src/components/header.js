@@ -1,28 +1,12 @@
 import { useStaticQuery, graphql } from "gatsby"
 import PropTypes from "prop-types"
-import React from "react"
+import React, { useContext } from "react"
+
 import Img from "gatsby-image"
 import MenuList from "./menuList"
+import { NavApi } from "../pages/index"
 
 const Header = ({ siteTitle }) => {
-  const toggleMenu = () => {
-    const menu = document.querySelector(".header__nav")
-
-    const isExpanded = menu.getAttribute("aria-expanded") === "true"
-    menu.setAttribute("aria-expanded", !isExpanded)
-  }
-
-  const scrollTo = e => {
-    toggleMenu()
-
-    const target = e.target.textContent.toLowerCase()
-
-    console.log(target)
-    const el = document.querySelector(`.${target}`)
-
-    el.scrollIntoView({ behavior: "smooth" })
-  }
-
   const data = useStaticQuery(graphql`
     query {
       file(relativePath: { eq: "logo.png" }) {
@@ -35,6 +19,7 @@ const Header = ({ siteTitle }) => {
     }
   `)
 
+  const { toggleMenu, scrollTo } = useContext(NavApi)
   return (
     <header className="header">
       <h1 className="header__title">{siteTitle}</h1>
