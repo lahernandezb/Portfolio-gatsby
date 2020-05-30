@@ -1,5 +1,19 @@
 .footer {
   width: 100%;
+  text-align: center;
+
+  &__thank-you {
+    font-size: 1.5rem;
+  }
+
+  &__year {
+    display: inline-block;
+  }
+
+  &__design-credit {
+    display: inline-block;
+    margin-left: 1rem;
+  }
 
   &__credit {
     color: $accent-one;

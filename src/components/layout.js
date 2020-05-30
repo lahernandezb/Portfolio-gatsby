@@ -27,12 +27,16 @@ const Layout = ({ children }) => {
     <>
       <Header siteTitle={data.site.siteMetadata.title} />
       <main className="main-content-wrapper">{children}</main>
-      <footer>
-        © {new Date().getFullYear()}, Designed by{" "}
-        <a className="footer__credit" href="https://www.behance.net/alanaee">
-          Alyssa Schenkel
-        </a>
-        {` `}
+      <footer className="footer">
+        <p className="footer__thank-you">Thanks for visiting!</p>
+        <p className="footer__year">© {new Date().getFullYear()},</p>
+        <p className="footer__design-credit">
+          Designed by{" "}
+          <a className="footer__credit" href="https://www.behance.net/alanaee">
+            Alyssa Schenkel
+          </a>
+          {` `}
+        </p>
       </footer>
     </>
   )
