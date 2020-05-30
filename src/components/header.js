@@ -7,6 +7,8 @@ import MenuList from "./menuList"
 import { NavApi } from "../pages/index"
 
 const Header = ({ siteTitle }) => {
+  const { toggleMenu, scrollTo } = useContext(NavApi)
+
   const data = useStaticQuery(graphql`
     query {
       file(relativePath: { eq: "logo.png" }) {
@@ -19,7 +21,6 @@ const Header = ({ siteTitle }) => {
     }
   `)
 
-  const { toggleMenu, scrollTo } = useContext(NavApi)
   return (
     <header className="header">
       <h1 className="header__title">{siteTitle}</h1>

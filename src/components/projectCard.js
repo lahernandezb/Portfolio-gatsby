@@ -1,10 +1,10 @@
 import React from "react"
-import { useStaticQuery, graphql, Link } from "gatsby"
+import { useStaticQuery, graphql } from "gatsby"
 import PropTypes from "prop-types"
 import Icon from "./iconImage"
 
 const ProjectCard = ({ name, tools, description }) => {
-  const data = useStaticQuery(graphql`
+  useStaticQuery(graphql`
     query MyQuery {
       allFile(filter: { extension: { eq: "png" } }) {
         edges {
@@ -24,7 +24,7 @@ const ProjectCard = ({ name, tools, description }) => {
 
   return (
     <div className="project-card">
-      <a className="project-card__link" to="">
+      <a className="project-card__link" href="#">
         <h3 className="project-card__name">{name}</h3>
       </a>
       <p className="project-card__description">
@@ -42,6 +42,18 @@ const ProjectCard = ({ name, tools, description }) => {
       </ul>
     </div>
   )
+}
+
+ProjectCard.propTypes = {
+  name: PropTypes.string,
+  tools: PropTypes.array,
+  description: PropTypes.string,
+}
+
+ProjectCard.defaultProps = {
+  name: "",
+  tools: [],
+  description: "",
 }
 
 export default ProjectCard

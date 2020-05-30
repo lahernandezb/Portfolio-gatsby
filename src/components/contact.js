@@ -17,6 +17,7 @@ const Contact = () => {
         using the form below.
       </p>
       <form
+        name="contact"
         action="POST"
         data-netlify="true"
         className="contact__form"

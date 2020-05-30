@@ -8,7 +8,7 @@ import ProjectsContainer from "../components/projects-container"
 import Jobs from "../components/jobs"
 import Contact from "../components/contact"
 
-export const NavApi = createContext(null)
+export const NavApi = createContext({})
 
 const toggleMenu = () => {
   const menu = document.querySelector(".header__nav")
