@@ -16,7 +16,12 @@ const Contact = () => {
         collaborate on a project, or simply want to say hello, send a message
         using the form below.
       </p>
-      <form className="contact__form" onSubmit={handleSubmit(onSubmit)}>
+      <form
+        action="POST"
+        data-netlify="true"
+        className="contact__form"
+        onSubmit={handleSubmit(onSubmit)}
+      >
         <div className="contact__fName">
           <label htmlFor="firstName">First Name:</label>
           <input
@@ -60,6 +65,7 @@ const Contact = () => {
             rows="10"
           ></textarea>
         </div>
+        <div data-netlify-recaptcha="true"></div>
         <input className="contact__submit" type="submit" value="Send Message" />
       </form>
     </section>
