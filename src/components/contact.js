@@ -25,6 +25,11 @@ const Contact = () => {
         onSubmit={handleSubmit(onSubmit)}
       >
         <input type="hidden" name="form-name" value="contact" />
+        <p hidden>
+          <label>
+            Don’t fill this out: <input name="bot-field" />
+          </label>
+        </p>
         <div className="contact__fName">
           <label htmlFor="firstName">First Name:</label>
           <input
