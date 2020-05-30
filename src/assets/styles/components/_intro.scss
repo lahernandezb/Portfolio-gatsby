@@ -4,7 +4,7 @@
   &__greeting {
     margin: 5vh 0;
     color: $accent-two;
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     font-weight: $light;
 
     @media (min-width: 43rem) {
@@ -19,7 +19,7 @@
   }
 
   &__description {
-    font-size: 2rem;
+    font-size: 2.75rem;
     font-weight: $light;
     color: $accent-two;
     margin: 5vh 0;
