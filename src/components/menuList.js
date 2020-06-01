@@ -29,7 +29,7 @@ const MenuList = ({ scrollTo }) => {
           Contact
         </button>
       </li>
-      <li className="header__menu-item">
+      <li hidden className="header__menu-item">
         <button className="header__menu-link" onClick={scrollTo} to="">
           Resume
         </button>

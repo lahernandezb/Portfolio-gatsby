@@ -2,11 +2,7 @@ import React from "react"
 import { useForm } from "react-hook-form"
 
 const Contact = () => {
-  const { register, handleSubmit } = useForm()
-
-  const onSubmit = data => {
-    console.log(data)
-  }
+  const { register } = useForm()
 
   return (
     <section className="contact">

@@ -22,7 +22,7 @@ const ProjectsContainer = () => {
       name: "Sparkbox Sparkeats",
       tools: ["Sails.js", "Node.js", "HTML", "Sass"],
       description:
-        "Sparkeats is a app where fellow Sparkboxers can leave reviews about their favorite local restuarants. I implemented a complete application redesign through Sass refactoring and componentization",
+        "Sparkeats is a app where fellow Sparkboxers can leave reviews about their favorite local restuarants. The team implemented a complete application redesign through Sass refactoring and componentization",
     },
     {
       key: "4",

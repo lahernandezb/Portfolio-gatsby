@@ -6,8 +6,11 @@
     font-family: $rationale;
   }
 
+  &__short,
   &__intro,
-  &__qualifications {
+  &__qualifications,
+  &__interests,
+  &__experience {
     font-weight: $light;
   }
 
